@@ -30,7 +30,7 @@ function preguntarSiSigue(carrito,saldo) {
                     let productoAQuitar = prompt("Ingrese el número de producto a quitar(segun orden en el carrito: 1,2,3...)" + "\n" + estadoCarrito);
                     while (productoAQuitar < 0 || productoAQuitar > carrito.lenght) {
                         alertarValidez();
-                        let productoAQuitar = prompt("Ingrese el número de producto a quitar(segun orden en el carrito)" + "\n" + estadoCarrito);
+                        let productoAQuitar = prompt("Ingrese el número de producto a quitar(segun orden en el carrito: 1,2,3...)" + "\n" + estadoCarrito);
                     }
                     quitarProducto(productoAQuitar-1, carrito);
                     estadoCarrito=carrito.join();
